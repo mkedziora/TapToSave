@@ -11,31 +11,7 @@ import com.example.taptosave.R
 import android.widget.Button
 import android.widget.Toast
 import android.widget.EditText
-import androidx.appcompat.app.AppCompatActivity
-
-/*
-class SettingsFragment : AppCompatActivity(){
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_settings)
-
-        val button = findViewById<Button>(R.id.buttonConfirm)
-        val buttonConnect = findViewById<Button>(R.id.buttonConnect)
-        val edit = findViewById<EditText>(R.id.editTextInhabitants)
-        val editTarget = findViewById<EditText>(R.id.editTextTarget)
-
-        button.setOnClickListener {
-            Toast.makeText(this,"Powodzenia!", Toast.LENGTH_LONG).show();
-            edit.text.clear()
-            editTarget.text.clear()
-        }
-        buttonConnect.setOnClickListener {
-            Toast.makeText(this, "Brak urządzeń w zasięgu", Toast.LENGTH_SHORT).show()
-        }
-    }
-}
-*/
+import kotlinx.android.synthetic.main.fragment_settings.view.*
 
 class SettingsFragment: Fragment() {
     override fun onCreateView(
@@ -45,15 +21,19 @@ class SettingsFragment: Fragment() {
     ): View? {
         val root = inflater.inflate(R.layout.fragment_settings, container, false)
 
-        val button = view?.findViewById<Button>(R.id.buttonConfirm)
-        val buttonConnect = view?.findViewById<Button>(R.id.buttonConnect)
-        val edit = view?.findViewById<EditText>(R.id.editTextInhabitants)
-        val editTarget = view?.findViewById<EditText>(R.id.editTextTarget)
-         button?.setOnClickListener {
-            Toast.makeText(getActivity(),"Powodzenia!", Toast.LENGTH_LONG).show();
-            edit!!.setText("")
-            editTarget!!.setText("")
-            }
+        val button = root.buttonConfirm
+        val buttonConnect = root.buttonConnect
+        val edit = root.editTextInhabitants
+        val editTarget = root.editTextTarget
+         button.setOnClickListener {
+             Toast.makeText(getActivity(), "Powodzenia!", Toast.LENGTH_LONG).show();
+             edit.text.clear()
+             editTarget.text.clear()
+         }
+         buttonConnect.setOnClickListener {
+             Toast.makeText(getActivity(), "Brak urządzeń w zasięgu", Toast.LENGTH_LONG).show();
+         }
+
 
 
 
