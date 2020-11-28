@@ -8,24 +8,25 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView1"
-        android:src="@drawable/wwf"
-        android:layout_width="207dp"
+        android:layout_width="189dp"
         android:layout_height="228dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="104dp"
-        app:shapeAppearanceOverlay="@style/roundborder"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:src="@drawable/wwf"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundborder"
+        app:strokeColor="@color/black"
+        app:strokeWidth="4dp"
         tools:src="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/textViewLinkOne"
-        android:layout_width="200dp"
-        android:layout_height="45dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        android:layout_marginBottom="8dp"
-        android:text="WWF/Freshwater"
+        android:layout_marginBottom="10dp"
+        android:text="WWF on freshwater"
         android:textAlignment="textStart"
         android:textColor="#0061E0"
         android:textSize="25sp"
@@ -35,40 +36,49 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView3"
-        android:src="@drawable/rosa"
-        android:layout_width="207dp"
+        android:layout_width="189dp"
         android:layout_height="228dp"
-        app:shapeAppearanceOverlay="@style/roundborder"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/rosa"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView1"
+        app:shapeAppearanceOverlay="@style/roundborder"
+        app:strokeColor="@color/black"
+        app:strokeWidth="4dp"
         tools:src="@tools:sample/avatars" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView4"
-        android:src="@drawable/ourworld"
-        android:layout_width="207dp"
+        android:layout_width="189dp"
         android:layout_height="228dp"
-        app:shapeAppearanceOverlay="@style/roundborder"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ourworld"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:shapeAppearanceOverlay="@style/roundborder"
+        app:strokeColor="@color/black"
+        app:strokeWidth="4dp"
         tools:src="@tools:sample/avatars" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView2"
-        android:src="@drawable/waterdrop"
-        android:layout_width="207dp"
+        android:layout_width="189dp"
         android:layout_height="228dp"
         android:layout_marginTop="104dp"
-        app:shapeAppearanceOverlay="@style/roundborder"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/waterdrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundborder"
+        app:strokeColor="@color/black"
+        app:strokeWidth="4dp"
         tools:src="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/textViewLinkTwo"
-        android:layout_width="200dp"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginBottom="10dp"
@@ -77,12 +87,12 @@
         android:textColor="#0061E0"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
-        app:layout_constraintStart_toEndOf="@+id/imageView1" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/textViewLinkThree"
-        android:layout_width="200dp"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginBottom="10dp"
@@ -96,7 +106,7 @@
 
     <TextView
         android:id="@+id/textViewLinkFour"
-        android:layout_width="200dp"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginBottom="10dp"
@@ -106,6 +116,6 @@
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:layout_constraintStart_toEndOf="@+id/imageView3" />
+        app:layout_constraintStart_toStartOf="@+id/imageView4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
