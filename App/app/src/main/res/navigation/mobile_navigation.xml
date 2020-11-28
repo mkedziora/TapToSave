@@ -23,4 +23,10 @@
         android:label="Education"
         tools:layout="@layout/fragment_education" />
 
+    <fragment
+        android:id="@+id/nav_scoreboard"
+        android:name="com.example.taptosave.ui.scoreboard.Scoreboard"
+        android:label="Scoreboard"
+        tools:layout="@layout/fragment_scoreboard" />
+
 </navigation>
