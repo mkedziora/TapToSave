@@ -55,6 +55,7 @@
         <TextView
             android:text="Score"
             android:textSize="25dp"
+            android:textStyle="bold"
             android:layout_margin="5dp"
             android:padding="5dp"
             android:layout_width="98dp"
@@ -91,6 +92,7 @@
         <TextView
             android:text="69"
             android:textSize="25dp"
+            android:textStyle="bold"
             android:layout_margin="5dp"
             android:padding="5dp"
             android:textColor="@color/our_lime_green"
