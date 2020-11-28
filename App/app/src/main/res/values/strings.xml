@@ -31,4 +31,10 @@
         <item>2020</item>
         <item>2021</item>
     </string-array>
+
+    <string-array name="roomsList">
+        <item>kitchen</item>
+        <item>bathroom1</item>
+        <item>bathroom2</item>
+    </string-array>
 </resources>

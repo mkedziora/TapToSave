@@ -10,30 +10,71 @@
 
     <TextView
         android:id="@+id/textView323"
-        android:textSize="32dp"
+        android:textSize="24dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Today's usage: "
+        android:text="KITCHEN: 50l"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:translationZ="1dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/textView444"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BATHROOM1: 38l"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView323"
         android:translationZ="1dp"/>
+    <TextView
+        android:id="@+id/textView555"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BATHROOM2: 50l"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView444"
+        android:translationZ="1dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ListView
+        android:translationZ="1dp"
+        android:id="@+id/roomslist"
+        android:layout_width="341dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="24dp"
+        android:background="#E9F8F6"
+        android:entries="@array/roomsList"
+        android:listSelector="#4ABF92"
+        android:textAlignment="center"
+
+        app:layout_constraintBottom_toTopOf="@+id/barChart2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:translationZ="1dp"
+        android:id="@+id/barChart2"
+        android:layout_width="334dp"
+        android:layout_height="317dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.867" />
 
     <TextView
-        android:background="@color/purple_500"
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="6dp"
         tools:layout_editor_absoluteY="6dp" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="143dp"
-        android:translationZ="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView323"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
