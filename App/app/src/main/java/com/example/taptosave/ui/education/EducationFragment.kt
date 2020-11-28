@@ -60,7 +60,7 @@ class SlideshowFragment : Fragment() {
             val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://ourworldindata.org/water-use-stress"))
             startActivity(i)
         }
-        imageFour.setOnClickListener{
+        linkFour.setOnClickListener{
             val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://ourworldindata.org/water-use-stress"))
             startActivity(i)
         }
