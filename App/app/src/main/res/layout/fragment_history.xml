@@ -10,40 +10,45 @@
 
     <ListView
         android:id="@+id/yearlist"
-        android:layout_width="213dp"
-        android:layout_height="35dp"
+        android:layout_width="341dp"
+        android:layout_height="53dp"
+        android:background="#E9F8F6"
         android:entries="@array/yearlist"
-
+        android:listSelector="#4ABF92"
+       
         app:layout_constraintBottom_toTopOf="@+id/monthlist"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.506" />
 
     <ListView
         android:id="@+id/monthlist"
-        android:layout_width="213dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="68dp"
-
-        android:clickable="true"
+        android:layout_width="341dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="24dp"
+        android:background="#E9F8F6"
         android:entries="@array/monthlist"
+        android:listSelector="#4ABF92"
+        android:textAlignment="center"
+
         app:layout_constraintBottom_toTopOf="@+id/barChart"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.github.mikephil.charting.charts.BarChart
         android:id="@+id/barChart"
-        android:layout_width="340dp"
-        android:layout_height="206dp"
+        android:layout_width="334dp"
+        android:layout_height="317dp"
         android:layout_centerInParent="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
-
-
+        app:layout_constraintVertical_bias="0.867" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

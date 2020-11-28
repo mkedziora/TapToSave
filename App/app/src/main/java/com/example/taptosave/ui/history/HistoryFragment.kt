@@ -32,11 +32,14 @@ class HistoryFragment: Fragment(){
 
         val bananaDataSet = getEntriesFromCSV(R.raw.november, "November")
         val root = inflater.inflate(R.layout.fragment_history, container, false)
-
-        root.monthlist.setItemChecked(10, true);//position 1
-        root.monthlist.setSelection(10);//position 1
-        root.yearlist.setItemChecked(2, true);//position 1
+        root.monthlist.setSelection(9);//position 1
+        root.monthlist.setItemChecked(9, true);//position 1
         root.yearlist.setSelection(2);//position 1
+        root.yearlist.setItemChecked(2, true);//position 1
+
+
+
+
         root.barChart.description.text = " "
         root.barChart.xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
         root.barChart.getAxisRight().setDrawGridLines(false);
@@ -45,6 +48,7 @@ class HistoryFragment: Fragment(){
         val limitLine = LimitLine(140.toFloat())
         limitLine.setLineColor(Color.RED);
         limitLine.setLineWidth(2f);
+
 //        limitLine.setLabel("Desired Level");
         root.barChart.axisLeft.addLimitLine(limitLine)
 
