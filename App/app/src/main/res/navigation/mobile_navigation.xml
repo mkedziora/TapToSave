@@ -34,4 +34,9 @@
         android:label="Scoreboard"
         tools:layout="@layout/fragment_scoreboard" />
 
+    <fragment
+        android:id="@+id/nav_details"
+        android:name="com.example.taptosave.ui.details.DetailsFragment"
+        tools:layout="@layout/details_fragment"/>
+
 </navigation>
