@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.TapToSave" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#0061E0</item>
-        <item name="colorPrimaryVariant">#5DA9E9</item>
+        <item name="colorPrimary">@color/our_flickr_blue</item>
+        <item name="colorPrimaryVariant">@color/our_flickr_blue</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -11,6 +11,7 @@
         <item name="colorOnSecondary">@color/white</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
         <!-- Customize your theme here. -->
     </style>
 
@@ -22,7 +23,7 @@
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/our_lime_green</item>
         <item name="colorSecondaryVariant">@color/our_ocean_green</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondary">@color/white</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
@@ -31,6 +32,11 @@
     <style name="Theme.TapToSave.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
     </style>
 
     <style name="Theme.TapToSave.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
