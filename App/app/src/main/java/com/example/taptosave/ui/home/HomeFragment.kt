@@ -18,7 +18,8 @@ class HomeFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         root = inflater.inflate(R.layout.fragment_home, container, false)
-        val button = root.text_home
+        val tipOfTheDay = root.textView4.text
+        root.textView4.text = tipOfTheDay.toString() + "działa"
         return root
     }
 }
