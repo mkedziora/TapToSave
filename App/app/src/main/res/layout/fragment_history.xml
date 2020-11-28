@@ -7,32 +7,29 @@
 
     <!-- static -->
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="198dp"
-        android:layout_height="31dp"
-        android:layout_alignParentTop="true"
-        android:layout_margin="10dp"
-        android:entries="@array/yearlist"
-        app:layout_constraintBottom_toTopOf="@+id/spinner2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:dropDownHeight="300dp"/>
 
-    <Spinner
-        android:id="@+id/spinner2"
+    <ListView
+        android:id="@+id/yearlist"
         android:layout_width="213dp"
         android:layout_height="35dp"
-        android:layout_below="@+id/spinner"
-        android:layout_margin="10dp"
-        android:layout_marginBottom="52dp"
+        android:entries="@array/yearlist"
+
+        app:layout_constraintBottom_toTopOf="@+id/monthlist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/monthlist"
+        android:layout_width="213dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="68dp"
+
+        android:clickable="true"
         android:entries="@array/monthlist"
         app:layout_constraintBottom_toTopOf="@+id/barChart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:dropDownHeight="300dp"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.github.mikephil.charting.charts.BarChart
         android:id="@+id/barChart"
@@ -45,4 +42,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
