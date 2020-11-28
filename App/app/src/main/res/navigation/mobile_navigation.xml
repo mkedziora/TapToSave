@@ -19,8 +19,14 @@
 
     <fragment
         android:id="@+id/nav_education"
-        android:name="com.example.taptosave.ui.slideshow.SlideshowFragment"
+        android:name="com.example.taptosave.ui.education.SlideshowFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_education" />
+
+    <fragment
+        android:id="@+id/nav_scoreboard"
+        android:name="com.example.taptosave.ui.scoreboard.Scoreboard"
+        android:label="Scoreboard"
+        tools:layout="@layout/fragment_scoreboard" />
 
 </navigation>

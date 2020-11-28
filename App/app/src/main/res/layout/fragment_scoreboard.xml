@@ -1,0 +1,419 @@
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:layout_weight="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Add friend"
+            android:layout_marginTop="10dp"
+            android:id="@+id/addFriend_btn"
+            android:layout_span="4"
+            />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="1. "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:textColor="@color/our_lime_green"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="1" />
+
+        <TextView
+            android:text="You"
+            android:textSize="25dp"
+            android:textColor="@color/our_lime_green"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+
+        <TextView
+            android:text="69"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="@color/our_lime_green"
+            android:layout_width="98dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="2. "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="1" />
+
+        <TextView
+            android:text="Bob Ross"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+
+        <TextView
+            android:text="69"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="98dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="3. "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="1" />
+
+        <TextView
+            android:text="Rusty Males"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+
+        <TextView
+            android:text="69"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="98dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="4. "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="1" />
+
+        <TextView
+            android:text="Daphne Field"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+
+        <TextView
+            android:text="69"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="98dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="5. "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="1" />
+
+        <TextView
+            android:text="Tristram Rice"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+
+        <TextView
+            android:text="69"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="98dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="7. "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="1" />
+
+        <TextView
+            android:text="Jessica Cooke"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+
+        <TextView
+            android:text="69"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="98dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="8. "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="1" />
+
+        <TextView
+            android:text="Piers Hayward"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+
+        <TextView
+            android:text="69"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="98dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="9. "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="1" />
+
+        <TextView
+            android:text="Alina Wintringham"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+
+        <TextView
+            android:text="69"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="98dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="10. "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="1" />
+
+        <TextView
+            android:text="Tony Harvey"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+
+        <TextView
+            android:text="69"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="98dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="11. "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="1" />
+
+        <TextView
+            android:text="Gary Apple"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+
+        <TextView
+            android:text="69"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="98dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:text="12. "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="1" />
+
+        <TextView
+            android:text="Angelica Reid"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+
+        <TextView
+            android:text="69"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="98dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:text="13. "
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_column="1" />
+
+        <TextView
+            android:text="Therewas Nosix"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+
+        <TextView
+            android:text="69"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="98dp"
+            android:layout_height="50dp"
+            android:width="200px" />
+    </TableRow>
+
+</TableLayout>
+    </LinearLayout>
+</ScrollView>
