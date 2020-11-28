@@ -5,13 +5,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.taptosave.MainActivity
 import com.example.taptosave.R
-import kotlinx.android.synthetic.main.fragment_home.view.*
 import com.example.taptosave.ui.details.DetailsFragment
-import kotlinx.android.synthetic.main.details_fragment.*
-import kotlinx.android.synthetic.main.details_fragment.view.*
+import kotlinx.android.synthetic.main.fragment_home.view.*
 
 class HomeFragment : Fragment() {
 
@@ -27,12 +26,14 @@ class HomeFragment : Fragment() {
         root.button.setOnClickListener {
             (context as MainActivity).changeFragment(DetailsFragment.newInstance())
                 }
-        val todayScore = root.textView2.text
+        val dropImage = root.imageViewDrop
+        dropImage.setOnClickListener {
+            Toast.makeText(getActivity(), "Liters of water used today.", Toast.LENGTH_SHORT).show();
+        }
+//        val todayScore = root.textView2.text
         val score = root.textView3.text
         val tipOfTheDay = root.textView4.text
-        root.textView4.text = """$tipOfTheDay
-            
-To save more water, don't use it too much"""
+        root.textView4.text = """$tipOfTheDay To save more water, don't use it too much"""
         return root
     }
 }
